@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+</head>
+<body>
+    <p>Puede que se te presente un overflow y esto es muy facil de solucionarlo una vez entiendes que es y a que se debe.</p>
+    <p>Este tipo de problemas suceden porque definimos una altura absoluta a las cajas. Las medidas en pixeles son valores absolutos que no cambian sin importar el tamaño del contenedor, mientras que los porcentajes son valores relativos que se adaptan al tamaño de la pantalla. Sin embargo, para este caso lo único que debemos hacer es agregar un ancho mínimo, del cual no pueda reducirse más.</p>
+    <p>De esta forma, tendra un tamaño minimo de 150px como usamos en el ejemplo, pero si su contenido crece, el contenedor crecera con él</p>
+
+    <span>min-height: 150px;</span>
+    
+    <p>
+        Cómo hacer un scroll:
+        <p>Primero, para que nuestro contenedor pueda generar el scroll entre las tarjetas estas deben tenerlo. Centramos todas las tarjetas para general un scroll con scroll-snap-align: center. Esta línea la colocamos justo debajo del position: relative del contenedor de nuestra tarjeta.</p>
+
+        <p>
+            Llamamos la clase del contenedor de las tarjetas con .plans-container–slider.
+        display: flex ya nos genera un scroll horizontal, pero se desborda del contenedor y se genera un overflow por fuera.
+        Le damos una altura de 316px, mayor al contenedor de las tarjetas.
+        Generamos un scroll sobre el eje x con overflow-x: scroll. Esta propiedad establece lo que se muestra cuando el contenido desborda los bordes izquierdo y derecho de un elemento a nivel de bloque. Puede que no sea nada, una barra de desplazamiento o el contenido adicional.
+        overscroll-behabior establece lo que hace un navegador cuando alcanza el límite de un área de desplazamiento.
+        Para que al deslizarnos sobre las tarjetas la vista se centre en el centro de cada una de ellas como si tuviesen un iman, usamos scroll-snap-type: x proximity.
+        </p>
+    </p>
+</body>
+</html>
