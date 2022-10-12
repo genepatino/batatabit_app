@@ -31,6 +31,7 @@
 html{
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -51,6 +52,36 @@ header img {
     margin-top: 60px;
     align-self: center;
 }
+
+/* SCROLL */
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+/* body::-webkit-scrollbar {
+    width: 5px;               
+}
+  
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--grey);
+    border-radius: 20px;   
+                
+} */
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--grey);;
+}
+
+body::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #CCCCCC;
+}
+
+/*  */
 
 .header_title-container {
     width: 90%;
@@ -273,6 +304,7 @@ main {
 .table_go-left{
     right: auto;
     left: -40px;
+    transform: rotate(180deg);
 }   
 
 .table_go-rigth:hover,
@@ -329,7 +361,7 @@ main {
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
@@ -383,3 +415,210 @@ main {
     line-height: 1.8rem;
     color: #808080;
 }
+
+.bitcoin_img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    text-align: center;
+    background-image: url("https://i.postimg.cc/2S8wKrSK/bitcoinbaby2x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bitcoin_img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.main_plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plans_title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plans_title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans_title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+
+.plans_container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans_container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 20px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.recommended {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    padding: 6px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+.plan_card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+
+}
+
+.plan_card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.2rem;
+    color: var(--black);
+}
+
+.plan_card--price sup {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+}
+
+.plan_card--saving {
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.plan_card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: #645f5a;
+
+}
+
+.plan_card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+    background-image: url("./assets/icons/orange-right-arrow.svg");
+}
+
+.none{
+    color: var(--grey);
+}
+
+.button_none{
+    border: 2px solid var(--grey);
+}
+
+.button_none .span_arrow_gray{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+    background-image: url("./assets/icons/arrow-right.svg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querys */
+
+/* @media (min-width: 800px) {
+    .plans_container--slider{
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    .table_go-rigth{
+        display: none;
+    }   
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
