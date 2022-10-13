@@ -594,20 +594,6 @@ figcaption .media:hover{
     cursor: pointer;
 }
 
-/* media querys */
-
-/* @media (min-width: 800px) {
-    .plans_container--slider{
-        justify-content: center;
-        overflow-x: hidden;
-    }
-    .table_go-rigth{
-        display: none;
-    }   
-    
-} */
-
-
 
 
 

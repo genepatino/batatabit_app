@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width:900px)">
     <script src="./javascript.js" defer></script>
     <title>Document</title>
 </head>
@@ -17,7 +18,7 @@
         <div class="header_title-container">
             <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="/" target="_blank" class="header_button">Conoce Nuestros Planes <span></span></a>
+            <a href="#plans" class="header_button">Conoce Nuestros Planes <span></span></a>
         </div>
     </header>
     <main>
@@ -101,22 +102,16 @@
                     <p class="product_card-title">Tiempo real</p>
                     <p class="product_card-body">Nuestra API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
                 </article>
-            </section>
-            <section class="product_cards--container">
                 <article class="product_detail--card">
                     <span class="eye"></span>
                     <p class="product_card-title">No hay tasas escondidas</p>
                     <p class="product_card-body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
                 </article>
-            </section>
-            <section class="product_cards--container">
                 <article class="product_detail--card">
                     <span class="dollar"></span>
                     <p class="product_card-title">Compara monedas</p>
                     <p class="product_card-body">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
                 </article>
-            </section>
-            <section class="product_cards--container">
                 <article class="product_detail--card">
                     <span class="check"></span>
                     <p class="product_card-title">Información confiable</p>
@@ -138,7 +133,7 @@
                         <h3 class="plan_card--title">Pago Anual</h3>
                         <p class="plan_card--price none"><sup>$</sup> 5</p>
                         <p class="plan_card--saving">*Ahorras $129 comparado al plan mensual.</p>
-                        <button class="plan_card--ca button_none">Escoger este <span class="span_arrow_gray"></span></button>
+                        <button class="plan_card--ca button_none">Quiero este <span class="span_arrow_gray"></span></button>
                     </div>
                 </article>
                 
@@ -151,7 +146,7 @@
                         <h3 class="plan_card--title">Pago Anual</h3>
                         <p class="plan_card--price"><sup>$</sup> 69</p>
                         <p class="plan_card--saving">*Ahorras $129 comparado al plan mensual.</p>
-                        <button class="plan_card--ca">Escoger este <span></span></button>
+                        <button class="plan_card--ca">Quiero este <span></span></button>
                         <div class="table_go-rigth">
                             <img src="./assets/icons/arrow.svg">
                         </div>
@@ -170,9 +165,21 @@
     </main>
     <footer>
         <section class="left">
-            <figcaption><img class="media" src='https://i.postimg.cc/1gk8x2TB/github1.png' alt='github1'/></figcaption>
-            <figcaption><img class="media" src='https://i.postimg.cc/VdqpXtmk/linkedin.png' alt='linkedin'/></figcaption>
-            <figcaption><img class="media" src='https://i.postimg.cc/V5DDwFfM/google-mas.png' alt='google-mas'/></figcaption>
+            <figcaption>
+                <a href="https://github.com/" target="_blank">
+                    <img class="media" src='https://i.postimg.cc/1gk8x2TB/github1.png' alt='github1'/>
+                </a>
+            </figcaption>
+            <figcaption>
+                <a href="https://co.linkedin.com/" target="_blank">
+                    <img class="media" src='https://i.postimg.cc/VdqpXtmk/linkedin.png' alt='linkedin'/>
+                </a>
+            </figcaption>
+            <figcaption>
+                <a href="https://accounts.google.com/ServiceLogin/signinchooser?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+                    <img class="media" src='https://i.postimg.cc/V5DDwFfM/google-mas.png' alt='google-mas'/>    
+                </a>
+            </figcaption>
         </section>
         <section class="logo_footer">
             <figcaption>
