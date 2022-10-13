@@ -43,7 +43,7 @@ header {
     min-width: 324px;
     height: 334px;
     text-align: center;
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    background: linear-gradient(194.8deg, #201E1C 35.69%, #F7931A 137%);
 }
 
 header img {
@@ -242,7 +242,7 @@ main {
     border-radius: 0 0 15px 0;
 }
 
-.currency_table--container .table__right {
+.currency_table--container .table_right {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
